@@ -21,8 +21,11 @@ export const EmotionQuest = () => {
   } | null>(null);
 
   const handleStartQuest = () => {
+    console.log("Start Quest clicked!");
+    console.log("Current gameScreen:", gameScreen);
     setGameScreen('chapter');
     setGameState(prev => ({ ...prev, currentChapter: 0 }));
+    console.log("Changed to chapter screen");
   };
 
   const handleChoiceMade = (isCorrect: boolean) => {
@@ -78,12 +81,32 @@ export const EmotionQuest = () => {
   };
 
   const renderCurrentScreen = () => {
+    console.log("Rendering screen:", gameScreen);
+    console.log("Current chapter index:", gameState.currentChapter);
+    
     switch (gameScreen) {
       case 'welcome':
+        console.log("Rendering welcome screen");
         return <WelcomeScreen onStartQuest={handleStartQuest} />;
       
       case 'chapter':
+        console.log("Rendering chapter screen");
         const currentChapter = chapters[gameState.currentChapter];
+        console.log("Current chapter data:", currentChapter);
+        
+        if (!currentChapter) {
+          console.error("Chapter not found! Index:", gameState.currentChapter, "Total chapters:", chapters.length);
+          return <div className="min-h-screen flex items-center justify-center">
+            <div className="text-center">
+              <h1 className="text-2xl font-bold text-red-500">Chapter Loading Error</h1>
+              <p>Chapter {gameState.currentChapter + 1} could not be loaded.</p>
+              <button onClick={() => setGameScreen('welcome')} className="mt-4 px-4 py-2 bg-primary text-white rounded">
+                Return to Welcome
+              </button>
+            </div>
+          </div>;
+        }
+        
         return (
           <ChapterScreen
             chapter={currentChapter}
@@ -95,6 +118,7 @@ export const EmotionQuest = () => {
         );
       
       case 'final':
+        console.log("Rendering final screen");
         return (
           <FinalChapter
             collectedFlowers={gameState.collectedFlowers}
@@ -103,6 +127,7 @@ export const EmotionQuest = () => {
         );
       
       case 'complete':
+        console.log("Rendering complete screen");
         return (
           <CompletionScreen
             collectedFlowers={gameState.collectedFlowers}
@@ -111,6 +136,7 @@ export const EmotionQuest = () => {
         );
       
       default:
+        console.log("Rendering default (welcome) screen");
         return <WelcomeScreen onStartQuest={handleStartQuest} />;
     }
   };
