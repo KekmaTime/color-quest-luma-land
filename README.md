@@ -6,10 +6,9 @@ _A fun, interactive color adventure for kids!_
 
 ## 🚀 Demo & Screenshots
 
-- **Live Demo:** [https://your-demo-link.com](https://your-demo-link.com)
-- **Screenshots:**
-  - ![Screenshot 1](public/placeholder.svg)
-  - ![Screenshot 2](public/placeholder.svg)
+- **Live Demo:** 
+- **Screenshots:** 
+![Screenshot 1](/src/assets/preview.jpeg)
 
 ---
 
@@ -20,8 +19,6 @@ _A fun, interactive color adventure for kids!_
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
-- [License](#license)
 - [Team](#team)
 - [Contact](#contact)
 - [Hackathon](#hackathon)
@@ -29,7 +26,7 @@ _A fun, interactive color adventure for kids!_
 ---
 
 ## 📝 About
-Color Quest: Luma Land is an engaging, educational game designed to help kids explore emotions and colors through interactive quests. Inspired by the need for playful learning tools, it combines storytelling, accessibility, and fun challenges.
+Emotion Quest: The Lost Colors of LumaLand is a story-driven game designed for children—especially those with alexithymia—to explore and identify emotions through interactive chapters. Each chapter centers on a single emotion, using expressive characters, gentle feedback, and visual metaphors like flowers and mirrors to encourage empathy, self-reflection, and emotional growth in a safe, engaging way.
 
 ---
 
@@ -94,35 +91,21 @@ src/
 
 ---
 
-## 🤝 Contributing
-1. Fork this repo
-2. Create a new branch: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m 'Add your feature'`
-4. Push to the branch: `git push origin feature/your-feature`
-5. Open a Pull Request
-
----
-
-## 📄 License
-MIT License (or TBD)
-
----
 
 ## 👥 Team
-- Your Name Here
-- Teammate 1
-- Teammate 2
+- Ananth B Prathap
+- Ananya A
+- Abhiram PM
+- Arya Sreekumar
 
 ---
 
 ## 📬 Contact
-- Email: your.email@example.com
-- Discord: yourdiscord#1234
+- Email: 22am014@sctce.ac.in | bloodybroody10@gmail.com | aryasreekumar592@gmail.com
 
 ---
 
 ## 🏆 Hackathon
-- **Event:** [Hackathon Name]
-- **Track:** [Track Name]
-- **Challenge:** [Challenge Name]
-- **Submission:** [https://hackathon-submission-link.com](https://hackathon-submission-link.com)
+- **Event:** CareHack
+- **Challenge:** Inclusive Game Design Challenge
+- **Submission:** 
