@@ -6,7 +6,7 @@ _A fun, interactive color adventure for kids!_
 
 ## 🚀 Demo & Screenshots
 
-- **Live Demo:** 
+- **Live Demo:** [Demo](https://color-quest-luma-land.vercel.app/)
 - **Screenshots:** 
 ![Screenshot 1](/src/assets/preview.jpeg)
 
@@ -108,4 +108,4 @@ src/
 ## 🏆 Hackathon
 - **Event:** CareHack
 - **Challenge:** Inclusive Game Design Challenge
-- **Submission:** 
+- **Submission:** [Demo](https://color-quest-luma-land.vercel.app/)
