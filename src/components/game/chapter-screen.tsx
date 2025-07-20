@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { FlowerBadge } from "@/components/ui/flower-badge";
@@ -24,6 +24,11 @@ export const ChapterScreen = ({
   choiceResult 
 }: ChapterScreenProps) => {
   const [selectedChoice, setSelectedChoice] = useState<number | null>(null);
+
+  // Reset selectedChoice when chapter changes
+  useEffect(() => {
+    setSelectedChoice(null);
+  }, [chapter.id]);
 
   const handleChoiceClick = (choiceIndex: number) => {
     if (showResult) return;
